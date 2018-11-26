@@ -1,12 +1,10 @@
-import { createStore } from 'redux';
+import { combineReducers } from 'redux';
+import expenseReducer from './components/ExpenseEntries/expenseReducer';
+import incomeReducer from './components/IncomeEntries/incomeReducer';
 
-function tempReducer () {
-    return null;
-}
+const rootReducer = combineReducers({
+    expense: expenseReducer,
+    income: incomeReducer
+});
 
-const rootStore = createStore(
-    tempReducer,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
-
-export default rootStore;
+export default rootReducer;
