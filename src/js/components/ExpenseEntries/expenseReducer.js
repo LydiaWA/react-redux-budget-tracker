@@ -29,7 +29,7 @@ export default function ExpenseReducer (state = defaultState, action) {
                 action: '',
                 lineItems: [
                     ...state.lineItems,
-                    {desciption, amount}
+                    {description, amount}
                 ]
             };
         }

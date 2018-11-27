@@ -29,7 +29,7 @@ export default function IncomeReducer (state = defaultState, action) {
                 action: '',
                 lineItems: [
                     ...state.lineItems,
-                    {desciption, amount}
+                    {description, amount}
                 ]
             };
         }
